@@ -1,0 +1,13 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<h2>Razor</h2>
+<form asp-controller="Home" asp-action="Count" method="post">
+    <p>Enter the number of bottles: </p>
+    <label for="quantity">Number of bottles (between 50 and 100):</label>
+    <input type="number" name="quantity" id="quantity" min="50" max="100" />
+    <br>
+    <br>
+    <input type="submit">
+</form>

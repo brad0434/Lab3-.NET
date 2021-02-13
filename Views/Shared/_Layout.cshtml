@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        Hello my name is Eric Bradley, welcome to my webpage! @ViewBag.title
+        <br /><br />
+        @Html.ActionLink("Hello World", "Index", "Home") <br />
+        @Html.ActionLink("Razor Example", "Razor", "Home") <br />
+        @Html.ActionLink("Create Person", "CreatePerson", "Home") <br />
+
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        I put the css in the wwwroot css folder and _Layout in the shared folder of views. The Layout applies the same format
+        with the links to each page and includes the stylesheet for every page.
+    </footer>
+</body>
+</html>

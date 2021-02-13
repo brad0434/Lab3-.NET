@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<h2>Person</h2>
+<form asp-controller="Home" asp-action="DisplayPerson" method="post">
+    <p>Enter user information: </p>
+    <label for="fName">First Name:</label>
+    <input type="text" name="fName" id="fName" />
+    <br>
+    <label for="lName">Last Name:</label>
+    <input type="text" name="lName" id="lName" />
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" />
+    <br>
+    <label for="emailAddress">Email Address:</label>
+    <input type="email" name="emailAddress" id="emailAddress" />
+    <br>
+    <label for="birthdate">Date of Birth:</label>
+    <input type="date" name="birthdate" id="birthdate" />
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" />
+    <br>
+    <label for="description">Description of Person:</label>
+    <input type="text" name="description" id="description" />
+    <br>
+    <br>
+    <input type="submit">
+</form>

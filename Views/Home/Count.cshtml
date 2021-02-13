@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Number of Bottles: @ViewBag.numOfBottles</h1>
+@{
+    for (var i = ViewBag.numOfBottles; i > 0; i--)
+    {
+        <p>
+            @i green bottles hanging on the wall,
+            @i green bottles hanging on the wall,
+            And if one green bottle should accidentally fall,
+            There'll be @(i-1)  green bottles hanging on the wall.
+        </p>
+    }
+    <form asp-controller="Home" asp-action="Razor" method="post">
+        <button>Press to play again</button>
+    </form>
+}
